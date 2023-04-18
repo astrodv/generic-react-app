@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>honey app title</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Bear body text!
         </p>
         <a
           className="App-link"
