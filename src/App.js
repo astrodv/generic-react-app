@@ -12,6 +12,7 @@ function App() {
         </p>
         <p>this-is-sprint-2</p>
         <p>testing the automated github actions yaml</p>
+        <p>this should appear after automation</p>
         <a
           className="App-link"
           href="https://reactjs.org"
