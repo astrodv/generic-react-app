@@ -11,6 +11,7 @@ function App() {
           Bear body text!
         </p>
         <p>this-is-sprint-2</p>
+        <p>testing the automated github actions yaml</p>
         <a
           className="App-link"
           href="https://reactjs.org"
