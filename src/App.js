@@ -10,6 +10,7 @@ function App() {
         <p>
           Bear body text!
         </p>
+        <p>this-is-sprint-2</p>
         <a
           className="App-link"
           href="https://reactjs.org"
