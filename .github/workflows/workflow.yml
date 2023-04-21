@@ -21,15 +21,15 @@ jobs:
         run: |
           git fetch --tags
 
+      - name: Install and build
+        run: npm install && npm run build
+
       - name: "Get all tags"
         id: all_tags
         run: |
           all_tags=$(git tag)
           echo "All tags: $all_tags"
-          echo "GIT_TAGS=$all_tags" >> $GITHUB_ENV # Set the tags as an environment variable
-
-      - name: Install and build
-        run: npm install && npm run build
+          echo "GIT_TAGS=$all_tags" >> $GITHUB_ENV # Set the tags as an environment variable        
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
