@@ -17,6 +17,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
+      - name: "Fetching Git tags"
+        run: |
+          git fetch --tags
+
+      - name: "Get all tags"
+        id: all_tags
+        run: |
+          all_tags=$(git tag)
+          echo $all_tags
+
       - name: Install and build
         run: npm install && npm run build
 
