@@ -25,7 +25,8 @@ jobs:
         id: all_tags
         run: |
           all_tags=$(git tag)
-          echo $all_tags
+          echo "All tags: $all_tags"
+          echo "GIT_TAGS=$all_tags" >> $GITHUB_ENV # Set the tags as an environment variable
 
       - name: Install and build
         run: npm install && npm run build
