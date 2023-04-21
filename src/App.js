@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const tags = process.env.GIT_TAGS;
+  console.log(`Git tags: ${tags}`);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -23,6 +27,7 @@ function App() {
           Learn React
         </a>
       </header>
+
     </div>
   );
 }
